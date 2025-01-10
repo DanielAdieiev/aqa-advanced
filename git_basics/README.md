@@ -1,1 +1,1 @@
-Main cannot be empty, so I did this way
+Now I can use git
