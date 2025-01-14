@@ -1,1 +1,0 @@
-Main cannot be empty, so I did this way
