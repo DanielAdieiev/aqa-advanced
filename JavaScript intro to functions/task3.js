@@ -1,12 +1,19 @@
 function checkOrder (available, ordered){
-    if(available < 0 || ordered < 0){
-        return "Please enter a valid number.";
-    } else if(available < ordered){
-        return "Your order is too large, we don't have enough goods.";
-    } else if(ordered === 0){
-        return "Your order is empty.";
-    } else if (available >= ordered){
-        return "The order is accepted.";
+    if(available < 0 || ordered < 0) {
+        console.log("Please enter a positive number.");
+        return;
+    }
+    if(available < ordered){
+        console.log("Your order is too large, we don't have enough goods.");
+        return;
+    } 
+    if(ordered === 0){
+        console.log("Your order is empty.");
+        return;
+    }
+    if (available >= ordered){
+        console.log("The order is accepted.");
+        return;
     }
 };
-console.log(checkOrder(0, 1));
+checkOrder(0, 9);
