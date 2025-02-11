@@ -1,7 +1,7 @@
 function divide (numerator, denominator){
-    if (denominator === 0 || denominator === null) {
+    if (denominator === 0) {
         throw new Error ("Cannot divide by zero");
-    } else if (isNaN(numerator) || isNaN(denominator)) {
+    } if (typeof numerator !== "number" || typeof denominator !== "number") {
         throw new Error ("Use numbers only");
     } else {
         console.log(numerator / denominator);  
