@@ -4,46 +4,46 @@ function divide (numerator, denominator){
     } if (typeof numerator !== "number" || typeof denominator !== "number") {
         throw new Error ("Use numbers only");
     } else {
-        console.log(numerator / denominator);  
+        console.log (numerator / denominator);  
     }
 }
 
 try {
-    divide ( 1, null);
+    divide (1, null);
 } catch (error){
-    console.log(error.message);
+    console.log (error.message);
 } finally {
-    console.log("Робота завершена");
+    console.log ("Робота завершена");
 }
 
 try {
-    divide ( 1, 0);
+    divide (1, 0);
 } catch (error){
-    console.log(error.message);
+    console.log (error.message);
 } finally {
-    console.log("Робота завершена");
+    console.log ("Робота завершена");
 }
 
 try {
     divide (5, 2);
 } catch (error){
-    console.log(error.message);
+    console.log (error.message);
 } finally {
-    console.log("Робота завершена");
+    console.log ("Робота завершена");
 }
 
 try {
     divide ("2", 5);
 } catch (error){
-    console.log(error.message);
+    console.log (error.message);
 } finally {
-    console.log("Робота завершена");
+    console.log ("Робота завершена");
 }
 
 try {
     divide (5, "2wrrrrr");
 } catch (error){
-    console.log(error.message);
+    console.log (error.message);
 } finally {
-    console.log("Робота завершена");
+    console.log ("Робота завершена");
 }
