@@ -4,13 +4,16 @@
   "main": "nodeBasics/index.js",
   "type": "module",
   "scripts": {
-    "start":"node nodeBasics/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node nodeBasics/index.js",
+    "test": "jest"
   },
   "author": "Daniel",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "chalk": "^4.1.2"
+    "axios": "^1.8.1",
+    "chalk": "^4.1.2",
+    "fs": "^0.0.1-security",
+    "jest": "^29.7.0"
   }
 }
