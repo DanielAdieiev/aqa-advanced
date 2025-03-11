@@ -1,4 +1,4 @@
 node_modules
 package-lock.json
-.husky
-package.json
+jest.config.js
+coverage
